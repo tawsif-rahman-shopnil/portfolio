@@ -1,6 +1,6 @@
-/*Bleak - Personal Portfolio Template*/
-/*Table of content
----------
+
+
+
 font
 general
 button
@@ -12,7 +12,7 @@ blog
 contact
 footer
 comment
----------*/
+
 /*general*/
 body {
     font-family: 'Roboto', sans-serif;
@@ -393,14 +393,14 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     z-index: -1000;
 }
 .portfolio .portfolio-filter-menu ul li span:hover {
-    color: #ff8c05;
+    color: #59D3FC;
 }
 .portfolio .portfolio-filter-menu ul li span:hover::after {
     height: 10px;
     background: #525252;
 }
 .portfolio .portfolio-filter-menu ul li.active {
-    color: #ff8c05;
+    color: #59D3FC;
 }
 .portfolio .content-image {
     position: relative;

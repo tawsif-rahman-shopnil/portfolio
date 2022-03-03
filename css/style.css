@@ -1,5 +1,3 @@
-
-
 /*
 font
 general
@@ -40,7 +38,7 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 h3 {
@@ -206,22 +204,19 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     transform: translateY(-50%);
 }
 .home-intro .intro-content .intro-caption span {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 300;
     display: inline-block;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 .home-intro .intro-content .intro-caption h3 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 900;
     background: -webkit-linear-gradient(right, #59D3FC, #554DDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 87px;
-}
-.home-intro .intro-content .intro-image {
-    filter: drop-shadow(-3px 17px 8px rgba(0, 0, 0, 0.3));
 }
 .home-intro .intro-content .intro-image img {
     width: 100%;
@@ -686,7 +681,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
         text-align: center;
     }
     .home-intro .intro-content .row .intro-caption h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .about .content-left {

@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 h5 {
@@ -206,7 +206,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     transform: translateY(-50%);
 }
 .home-intro .intro-content .intro-caption span {
-    font-size: 26px;
+    font-size: 17px;
     font-weight: 300;
     display: inline-block;
     margin-bottom: 30px;

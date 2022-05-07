@@ -75,18 +75,17 @@ ul {
 }
 
 .segments {
-    padding: 27px 0;
+    padding: 15px 0;
 }
 
 .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     text-align: center;
 }
 .section-title h2 {
-    font-weight: 700;
-    color: #59D3FC;
-
+    font-weight: 900;
 }
+
 .section-title.section-title-left {
     text-align: left;
 }
@@ -99,12 +98,12 @@ ul {
     font-size: 20px;
     font-weight: 900;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .title-resume h2 {
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 900;
 }
 .title-resume h2 span {
@@ -205,14 +204,14 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     transform: translateY(-50%);
 }
 .home-intro .intro-content .intro-caption span {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
     display: inline-block;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 .home-intro .intro-content .intro-caption h3 {
-    font-size: 30px;
+    font-size: 42px;
     font-weight: 900;
     background: -webkit-linear-gradient(right, #59D3FC, #554DDE);
     -webkit-background-clip: text;
@@ -356,17 +355,23 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
 
 /*portfolio*/
 .portfolio .row .col-md-4 {
-    padding: 15px;
+    padding: 10px;
 }
 .portfolio .portfolio-filter-menu {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
+}
+.portfolio .box-content .section-title h3 {
+    color: #59D3FC;
+    font-size: 30px;
+    font-weight: 700;
+
 }
 .portfolio .portfolio-filter-menu ul li {
     display: inline-block;
     margin: 0 15px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 5px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
@@ -510,7 +515,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
 
 /*contact*/
 .contact .content-left h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     background: -webkit-linear-gradient(right, #59D3FC, #554DDE);
     -webkit-background-clip: text;
@@ -519,7 +524,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
 }
 .contact .content-left h4 {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 500;
     display: inline-block;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -559,10 +564,11 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     }
 
     .section-title {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .section-title h3 {
-        font-size: 22px;
+        font-size: 35px;
+        font-weight: 900;
     }
 
     .button {

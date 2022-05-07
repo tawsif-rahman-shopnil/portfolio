@@ -362,41 +362,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     margin-bottom: 30px;
     text-align: center;
 }
-.portfolio .portfolio-filter-menu ul li {
-    display: inline-block;
-    margin: 0 15px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: 1px;
-    transition: .4s ease-in-out;
-}
-.portfolio .portfolio-filter-menu ul li span {
-    z-index: 99;
-    position: relative;
-}
-.portfolio .portfolio-filter-menu ul li span::after {
-    content: "";
-    height: 0;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s;
-    z-index: -1000;
-}
-.portfolio .portfolio-filter-menu ul li span:hover {
-    color: #59D3FC;
-}
-.portfolio .portfolio-filter-menu ul li span:hover::after {
-    height: 10px;
-    background: #525252;
-}
-.portfolio .portfolio-filter-menu ul li.active {
-    color: #59D3FC;
-}
+
 .portfolio .content-image {
     position: relative;
 }

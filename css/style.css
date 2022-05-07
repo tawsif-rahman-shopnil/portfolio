@@ -327,6 +327,86 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
 .resume .my-skill .content-right .card .card-body ul li:last-child {
     margin-bottom: 0;
 }
+.resume .timeline {
+    position: relative;
+    list-style-type: none;
+}
+.resume .timeline::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+    background: #fff;
+}
+.resume .timeline ul {
+    list-style-type: none;
+}
+.resume .timeline ul li {
+    margin-bottom: 20px;
+}
+.resume .timeline > li {
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+.resume .timeline > li:last-child {
+    margin-bottom: 0;
+}
+.resume .timeline > li::before {
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    z-index: 400;
+}
+.resume .timeline > li h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.resume .my-skill .content-right .card {
+    background: transparent;
+    border: 0;
+}
+.resume .my-skill .content-right .card .card-header {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+.resume .my-skill .content-right .card .card-header h2 .btn {
+    padding: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+.resume .my-skill .content-right .card .card-header h2 .btn:hover {
+    text-decoration: none;
+}
+.resume .my-skill .content-right .card .card-header h2 .btn:focus {
+    text-decoration: none;
+}
+.resume .my-skill .content-right .card .card-header h2 .btn i {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+    top: -2px;
+}
+.resume .my-skill .content-right .card .card-body {
+    padding-left: 32px;
+}
+.resume .my-skill .content-right .card .card-body ul li {
+    margin-bottom: 20px;
+}
+.resume .my-skill .content-right .card .card-body ul li:last-child {
+    margin-bottom: 0;
+}
 .resume .my-skill .content-right .skill-title span {
     font-size: 18px;
     margin-bottom: 10px;

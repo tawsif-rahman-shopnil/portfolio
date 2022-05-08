@@ -260,8 +260,13 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     z-index: 400;
     background: #fff;
 }
-.resume .box-content .section-title h3 {
+.resume .box-content .section-title h2 {
     color: #59D3FC;
+    font-size: 35x;
+    font-weight: 900;
+}
+.resume .box-content .section-title h3 {
+    color: #ededed;
     font-size: 35x;
     font-weight: 900;
 }
@@ -609,8 +614,8 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
         font-size: 40px;
     }
 
-    .resume .content-left .title-resume h3 {
-        font-size: 4px;
+    .resume .content-left .title-resume h2 {
+        font-size: 45px;
     }
 
     .portfolio .content-image .portfolio-caption {
@@ -697,7 +702,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     }
 
     .resume .content-left .title-resume h2 {
-        font-size: 4px;
+        font-size: 40px;
     }
 
     .contact .content-left h2 {

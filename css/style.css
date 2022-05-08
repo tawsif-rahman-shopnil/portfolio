@@ -3,8 +3,10 @@ font
 general
 button
 navbar
-home intro
-about resume
+home 
+intro
+about 
+resume
 portfolio
 blog
 contact
@@ -267,8 +269,8 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
 }
 .resume .box-content .section-title h3 {
     color: #ededed;
-    font-size: 35x;
-    font-weight: 900;
+    font-size: 20x;
+    font-weight: 800;
 }
 .resume .timeline ul {
     list-style-type: none;

@@ -121,8 +121,7 @@ ul {
 /*button default*/
 .button {
     background: #59D3FC;
-
-background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
+    background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     background: -webkit-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     background: linear-gradient(to right, #59D3FC 40%, #554DDE 100%);
 
@@ -264,13 +263,13 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
 }
 .resume .box-content .section-title h2 {
     color: #59D3FC;
-    font-size: 35x;
+    font-size: 40x;
     font-weight: 900;
 }
 .resume .box-content .section-title h3 {
     color: #ededed;
-    font-size: 20x;
-    font-weight: 800;
+    font-size: 30x;
+    font-weight: 900;
 }
 .resume .timeline ul {
     list-style-type: none;
@@ -580,7 +579,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     }
     .section-title h3 {
         color: #59D3FC;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 900;
     }
 

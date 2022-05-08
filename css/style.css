@@ -609,8 +609,8 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
         font-size: 40px;
     }
 
-    .resume .content-left .title-resume h2 {
-        font-size: 45px;
+    .resume .content-left .title-resume h3 {
+        font-size: 4px;
     }
 
     .portfolio .content-image .portfolio-caption {
@@ -697,7 +697,7 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     }
 
     .resume .content-left .title-resume h2 {
-        font-size: 40px;
+        font-size: 4px;
     }
 
     .contact .content-left h2 {

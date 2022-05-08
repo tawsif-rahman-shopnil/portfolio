@@ -1,17 +1,3 @@
-/*
-font
-general
-button
-navbar
-home intro
-about resume
-portfolio
-blog
-contact
-footer
-comment
-*/
-/*general*/
 body {
     font-family: 'Roboto', sans-serif;
     background: #212121;
@@ -204,8 +190,8 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     transform: translateY(-50%);
 }
 .home-intro .intro-content .intro-caption span {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     display: inline-block;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -259,6 +245,11 @@ background: -moz-linear-gradient(left, #59D3FC 40%, #554DDE 100%);
     height: 100%;
     z-index: 400;
     background: #fff;
+}
+.resume .box-content .section-title h3 {
+    color: #59D3FC;
+    font-size: 35x;
+    font-weight: 900;
 }
 .resume .timeline ul {
     list-style-type: none;

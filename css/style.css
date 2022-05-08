@@ -262,12 +262,12 @@ ul {
     background: #fff;
 }
 .resume .box-content .section-title h2 {
-    color: #59D3FC;
+    color: #ededed;
     font-size: 40x;
     font-weight: 900;
 }
 .resume .box-content .section-title h3 {
-    color: #ededed;
+    color: #59D3FC;
     font-size: 30x;
     font-weight: 900;
 }

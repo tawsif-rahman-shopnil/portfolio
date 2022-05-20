@@ -21,7 +21,12 @@ body {
     font-size: 14px;
     line-height: 22px;
 }
-
+@font-face {
+    font-family: 'Cyber';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cyber'), local('Cyber'), url(fonts/Cyber.woff) format('woff');
+  }
 h1,
 h2,
 h3,
@@ -211,17 +216,146 @@ ul {
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
-.home-intro .intro-content .intro-caption h3 {
-    font-size: 40px;
-    font-weight: 900;
-    background: -webkit-linear-gradient(right, #59D3FC, #554DDE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 50px;
-}
+.home-intro .intro-content .css-typing p {
+    font-family: "Courier";
+    font-size: 25px;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .css-typing p:nth-child(1) {
+    width: 6em;
+    -webkit-animation: type 2s steps(20, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 15em;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 4em;
+    opacity: 0;
+     opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid rgb(255, 255, 255);
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+  .home-intro .intro-content .header h1{
+    font-family: "Cyber";
+    font-size: 45px;
+    font-weight: 600;
+    color: #1dd6fa;
+    line-height: 70px;
+  }
+
+  
 .home-intro .intro-content .intro-image img {
-    width: 100%;
-}
+        width: 100%;
+    }
 
 /*about*/
 .about .box-content {
@@ -263,12 +397,12 @@ ul {
 }
 .resume .box-content .section-title h2 {
     color: #ededed;
-    font-size: 40x;
+    font-size: 50x;
     font-weight: 900;
 }
 .resume .box-content .section-title h3 {
     color: #59D3FC;
-    font-size: 30x;
+    font-size: 60x;
     font-weight: 900;
 }
 .resume .timeline ul {
@@ -703,10 +837,10 @@ ul {
     }
 
     .resume .content-left .title-resume h2 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .contact .content-left h2 {
-        font-size: 32px;
+        font-size: 50px;
     }
 }

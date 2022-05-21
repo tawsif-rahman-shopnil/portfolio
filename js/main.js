@@ -1,4 +1,4 @@
-// smooth scroll
+ // smooth scroll
     $("a").on("click", function(event) {
 
         if (this.hash !== "") {
@@ -17,7 +17,7 @@
     });
     document.addEventListener('DOMContentLoaded',function(event){
         // array with texts to type in typewriter
-        var dataText = [ "Web Development", "Wordpress", "UI/UX", "Graphics Design"];
+        var dataText = [ "Web Developer", "Wordpress Expert", "UI/UX Designer", "Graphics Designer"];
         
         // type one text in the typwriter
         // keeps calling itself until the text is finished
@@ -35,7 +35,7 @@
           // text finished, call callback if there is a callback function
           else if (typeof fnCallback == 'function') {
             // call callback after timeout
-            setTimeout(fnCallback, 700);
+            setTimeout(fnCallback, 1);
           }
         }
         // start a typewriter animation for a text in the dataText array

@@ -835,7 +835,7 @@ ul {
             width: 100%;
         }
     .home-intro .intro-content .row .intro-caption h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .about .content-left {
@@ -845,14 +845,14 @@ ul {
         text-align: center;
     }
     .about .content-left .content h2 {
-        font-size: 32px;
+        font-size: 25x;
     }
 
     .resume .content-left .title-resume h2 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .contact .content-left h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
 }

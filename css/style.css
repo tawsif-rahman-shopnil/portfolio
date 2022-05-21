@@ -219,7 +219,7 @@ ul {
 .home-intro .intro-content .css-typing p {
     font-family: "Courier";
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 900;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -232,7 +232,7 @@ ul {
   }
   
   .css-typing p:nth-child(2) {
-    width: 15em;
+    width: 2em;
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
@@ -243,7 +243,7 @@ ul {
   }
   
   .css-typing p:nth-child(3) {
-    width: 4em;
+    width: 13em;
     opacity: 0;
      opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
@@ -346,7 +346,7 @@ ul {
   }
   .home-intro .intro-content .header h1{
     font-family: "Cyber";
-    font-size: 45px;
+    font-size: 43px;
     font-weight: 100;
     color: #1dd6fa;
     line-height: 70px;
@@ -822,6 +822,18 @@ ul {
     .home-intro .intro-content .row {
         text-align: center;
     }
+    .home-intro .intro-content .header h1{
+        font-family: "Cyber";
+        font-size: 45px;
+        font-weight: 100;
+        color: #1dd6fa;
+        line-height: 70px;
+      }
+    
+      
+    .home-intro .intro-content .intro-image img {
+            width: 100%;
+        }
     .home-intro .intro-content .row .intro-caption h2 {
         font-size: 40px;
     }
@@ -837,10 +849,10 @@ ul {
     }
 
     .resume .content-left .title-resume h2 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .contact .content-left h2 {
-        font-size: 30px;
+        font-size: 50px;
     }
 }

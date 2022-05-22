@@ -30,7 +30,7 @@
             // wait for a while and call this function again for next character
             setTimeout(function() {
               typeWriter(text, i + 1, fnCallback)
-            }, 200);
+            }, 250);
           }
           // text finished, call callback if there is a callback function
           else if (typeof fnCallback == 'function') {

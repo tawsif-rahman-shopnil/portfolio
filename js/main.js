@@ -17,7 +17,7 @@
     });
     document.addEventListener('DOMContentLoaded',function(event){
         // array with texts to type in typewriter
-        var dataText = [ "Web Development", "Wordpress", "UI/UX Design", "Graphics Design"];
+        var dataText = [ "I do..", "Web Development", "Wordpress", "UI/UX Design", "Graphics Design"];
         
         // type one text in the typwriter
         // keeps calling itself until the text is finished

@@ -349,15 +349,6 @@ if(modalPopupList && modalPopupClose){
   });  
 }
 
-// Testimonial slider 
-const swiper = new Swiper('.testimonial__slider', {
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  }
-});
-
 // Toggle navigation
 const toggleNavButton = document.querySelector(".toggle__navigation--button");
 const onBodyClick = handleBodyClick.bind(this);

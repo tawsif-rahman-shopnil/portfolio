@@ -5101,3 +5101,89 @@ button.is-checked {
     max-width: 150px;
   }
 }
+
+
+/* CSS for project links */
+.resume-project-link {
+  font-size: 15px; 
+  color: #26c4e8; /* Use your accent color here */
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.resume-project-link:hover {
+  color: #a7dcff; 
+  text-decoration: none;
+}
+
+
+.expiry {
+  margin-left: 20px;
+  position: relative;
+  font-weight: bold; /* Set the text to bold */
+  font-size: 12px; /* Set the font size */
+  color: #c7eaf6; /* Set the text color */
+}
+
+.expiry::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute;
+  left: -10px; /* Adjust horizontal position to the left of the text */
+  top: 50%; /* Position vertically at the center of the text */
+  transform: translateY(-50%); /* Center the square vertically */
+  width: 6px; /* Set the width of the square */
+  height: 6px; /* Set the height of the square */
+  background-color: #c7eaf6; /* Set the color of the square */
+  border-radius: 2px; /* Round the corners of the square */
+}
+
+
+/* CSS for club activities */
+.text {
+  font-weight: bold; /* Set the text to bold */
+  font-size: 14px; /* Set the font size */
+  color: #d6d4d4; /* Set the text color */
+}
+
+
+/* CSS for club activities */
+.tree {
+  margin-left: 15px; /* Adjust the left margin for indentation */
+  position: relative;
+}
+
+.tree::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Adjust vertical position for connection line */
+  left: -8px; /* Adjust horizontal position for connection line */
+  border-left: 1px solid #ccc; /* Style of the connecting line */
+  height: 100%; /* Full height of the line */
+}
+
+.club {
+  font-weight: bold;
+  font-size: 13px; 
+  color: #26c4e8; /* Use your accent color here */
+  text-decoration: none;
+}
+
+.club:hover {
+  color: #a7dcff; 
+  text-decoration: none;
+}
+
+.club_ac {
+  font-size: 12px; 
+  color: #f9fdfe; /* Contribution link color */
+  text-decoration: none;
+}
+
+/* Hover effect for contribution links */
+.club_ac:hover {
+  color: #a7dcff; 
+  text-decoration: none;
+}
+
+

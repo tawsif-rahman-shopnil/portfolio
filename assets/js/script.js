@@ -316,6 +316,22 @@ if(isotopeGrid){
         event.target.classList.add('is-checked');
       });
     }
+
+    var relayoutTimer;
+    function schedulePortfolioLayout() {
+      window.clearTimeout(relayoutTimer);
+      relayoutTimer = window.setTimeout(function() {
+        iso.layout();
+      }, 120);
+    }
+
+    window.addEventListener("resize", schedulePortfolioLayout);
+    isotopeGrid.querySelectorAll("img").forEach(function(image) {
+      if (!image.complete) {
+        image.addEventListener("load", schedulePortfolioLayout, { once: true });
+        image.addEventListener("error", schedulePortfolioLayout, { once: true });
+      }
+    });
   });
   
 

@@ -659,7 +659,7 @@ button {
 
 @media (max-width: 1023px) {
   .container {
-    max-width: 750x;
+    max-width: 750px;
   }
 }
 
@@ -5099,6 +5099,118 @@ button.is-checked {
 
   .only-xl\:max-w-\[150px\] {
     max-width: 150px;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.68);
+  border-color: rgba(255, 255, 255, 0.58);
+  box-shadow: 0 18px 45px rgba(0, 2, 72, 0.08);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(18px) saturate(145%);
+}
+
+.glass-card:hover {
+  border-color: rgba(1, 167, 220, 0.48);
+  box-shadow: 0 24px 60px rgba(0, 2, 72, 0.14);
+}
+
+.glass-chip,
+.glass-icon {
+  background: rgba(255, 255, 255, 0.54);
+  border-color: rgba(1, 167, 220, 0.3);
+  -webkit-backdrop-filter: blur(12px) saturate(135%);
+  backdrop-filter: blur(12px) saturate(135%);
+}
+
+.dark .glass-card {
+  background: rgba(31, 41, 55, 0.5);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.dark .glass-card:hover {
+  border-color: rgba(1, 167, 220, 0.56);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+.dark .glass-chip,
+.dark .glass-icon {
+  background: rgba(31, 41, 55, 0.45);
+  border-color: rgba(1, 167, 220, 0.38);
+}
+
+.portfolio__grid .element-item {
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .portfolio__grid .element-item {
+    width: 33.333333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .isotope--filter .filters-button-group {
+    gap: 12px;
+  }
+
+  .isotope--filter .filters-button-group .button {
+    border: 1px solid rgba(1, 167, 220, 0.28);
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 1;
+    padding: 10px 12px;
+  }
+
+  .portfolio__grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .portfolio__grid .element-item {
+    max-width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .portfolio__grid .glass-card {
+    padding: 18px;
+  }
+
+  .portfolio__grid h3 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .portfolio__grid p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .portfolio__grid .glass-chip {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .portfolio__grid a img[src$="app-store.svg"],
+  .portfolio__grid a img[src$="google-play.svg"] {
+    height: 38px;
+    width: 124px;
+  }
+}
+
+@media (max-width: 479px) {
+  .portfolio__grid .glass-icon {
+    height: 62px;
+    width: 62px;
+  }
+
+  .portfolio__grid a img[src$="app-store.svg"],
+  .portfolio__grid a img[src$="google-play.svg"] {
+    height: 36px;
+    width: 118px;
   }
 }
 

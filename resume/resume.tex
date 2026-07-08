@@ -1,0 +1,214 @@
+\documentclass[a4paper,10pt]{article}
+
+% ========================
+% Packages
+% ========================
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}          % proper font encoding -> clean text extraction
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}              % vector Latin Modern fonts (ATS-safe, crisp)
+\usepackage[hidelinks,
+  pdftitle={Tawsif Rahman Shopnil - Flutter Developer Resume},
+  pdfauthor={Tawsif Rahman Shopnil},
+  pdfsubject={Flutter Developer / Mobile Application Developer},
+  pdfkeywords={Flutter, Dart, Riverpod, Bloc, Mobile Developer, Android, iOS, React, Laravel, Node.js, REST API, CI/CD}
+]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{setspace}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+% Map every glyph to real Unicode so ATS parsers extract clean text
+% (works with pdfLaTeX; guarded so other engines don't error)
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+% ========================
+% Styling
+% ========================
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{4pt}
+
+\setlist[itemize]{leftmargin=*, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize,2]{leftmargin=1.5em, topsep=0pt, itemsep=1pt}
+
+\newcommand{\smallgap}{\vspace{1pt}}
+\newcommand{\medgap}{\vspace{3pt}}
+
+\newcommand{\entry}[4]{
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}
+}
+
+\newcommand{\project}[2]{%
+  \smallgap
+  \noindent\textbf{#1} \hfill \textit{#2}\par
+}
+
+% ========================
+% Document
+% ========================
+\begin{document}
+
+% ========================
+% Header (single column, machine-readable)
+% ========================
+\begin{center}
+  {\fontsize{17pt}{17pt}\selectfont\textbf{Tawsif Rahman Shopnil}}\\[3pt]
+  Flutter Developer \textbar{} Mobile Application Developer\\[3pt]
+  Dhaka, Bangladesh \;\textbar\;
+  \href{mailto:tawsif.rahman.shopnil@gmail.com}{tawsif.rahman.shopnil@gmail.com} \;\textbar\;
+  \href{https://tawsifrahmanshopnil.com}{tawsifrahmanshopnil.com}\\[2pt]
+  \href{https://www.linkedin.com/in/iamtawsif}{linkedin.com/in/iamtawsif} \;\textbar\;
+  \href{https://github.com/tawsif-rahman-shopnil}{github.com/tawsif-rahman-shopnil}
+\end{center}
+
+\medgap
+
+% ========================
+% Summary
+% ========================
+\section*{Summary}
+Flutter developer with 2+ years of professional experience building and shipping production mobile apps end-to-end. Independently designed, built, and published \textbf{three AI-powered apps} to Google Play and the Apple App Store, and delivered Flutter work across \textbf{six-plus more live apps} spanning healthcare, fintech, travel, retail, and field-sales domains. Strong in Dart, \textbf{Riverpod and Bloc} state management, responsive UI, and REST API integration --- comfortable owning architecture and shipping reliable, maintainable code from design through deployment.
+
+\medgap
+
+% ========================
+% Technical Skills
+% ========================
+\section*{Technical Skills}
+
+\noindent
+\textbf{Mobile (Flutter):} Flutter, Dart, Riverpod, Bloc, responsive UI, REST API integration; KIOSK, consumer, and rider/delivery apps; Android, Google Play \& App Store publishing \\[3pt]
+\textbf{State Management:} Riverpod, Bloc (Flutter); Redux, Context API, React Query, Zustand (React); React Hook Form, Formik \\[3pt]
+\textbf{Frontend:} React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Material UI \\[3pt]
+\textbf{Backend \& APIs:} PHP, Laravel (9/10), Node.js, NestJS, Express, FastAPI, RESTful API design, microservices \\[3pt]
+\textbf{Databases:} MySQL, PostgreSQL, MSSQL; AWS RDS configuration; query optimization, indexing \\[3pt]
+\textbf{Auth \& Security:} JWT, OAuth2, Firebase Auth, Supabase Auth, role-based access control (RBAC) \\[3pt]
+\textbf{DevOps:} Git, Docker, GitHub Actions CI/CD, AWS (Windows \& Linux), server configuration \\[3pt]
+\textbf{AI \& Dev Tools:} Gemini API, OpenAI API, Claude Code, GitHub Copilot, LLM API integration, MCP clients
+
+\medgap
+
+% ========================
+% Experience
+% ========================
+\section*{Experience}
+
+\entry{Junior Software Engineer}{Mar 2024 -- Present}{Orange Solutions Limited (OSL), United Group | Dhaka, Bangladesh}{On-site, Full-time}
+\begin{itemize}
+  \item Develop and maintain cross-platform \textbf{Flutter applications} shipped to Google Play and the App Store, implementing responsive UI and integrating REST APIs across consumer, rider, KIOSK, and POS clients.
+  \item Solely owned full features and standalone apps end-to-end --- from architecture and state management through testing, store deployment, and post-release support --- demonstrating readiness for senior-level ownership.
+  \item Fixed bugs and improved app performance; tuned backend query performance via MySQL indexing and supported Docker-based CI/CD and AWS RDS configuration on staging environments.
+  \item Collaborated closely with backend developers and UI/UX designers, and contributed to sprint planning and technical decisions.
+\end{itemize}
+
+\smallgap
+
+\entry{Software Engineering Intern}{Jan 2024 -- Mar 2024}{Orange Solutions Limited (OSL), United Group | Dhaka, Bangladesh}{On-site}
+\begin{itemize}
+  \item Contributed to the Flutter user booking app and Flutter Cashier POS app for \textbf{Courtside Bangladesh} (United Group), and built the supporting Laravel + React admin panel with RBAC.
+  \item Supported debugging, performance optimization, and backend improvements across internal products.
+\end{itemize}
+
+\smallgap
+
+\entry{Software Engineer (Contract)}{Jul 2023 -- Jan 2024}{Swinroll Network Technologies Co., Ltd. | Hangzhou, China}{Remote}
+\begin{itemize}
+  \item Developed and \textbf{published Flutter and native Android applications} to the Google Play Store.
+  \item Integrated Firebase authentication and push notifications; automated build/deploy workflows via Docker and GitHub Actions CI/CD.
+\end{itemize}
+
+\medgap
+
+% ========================
+% Projects (published apps)
+% ========================
+\section*{Projects}
+
+\textit{Independent --- designed, built, and shipped solo:}
+\smallgap
+
+\project{Pocket Hishab --- AI-Powered Personal Finance App}{Flutter + Supabase + Gemini AI}
+\begin{itemize}
+  \item Live on \href{https://apps.apple.com/us/app/pocket-hishab/id6759366572}{App Store} \& \href{https://play.google.com/store/apps/details?id=com.mtrs.pocket_hishab}{Google Play}. Gemini-generated spending insights, rich transaction tracking, gamified saving-score and badges, biometric app lock (Face ID / fingerprint), and a backend-agnostic JSON-first architecture.
+\end{itemize}
+
+\project{Serein --- AI Habit Tracker}{Flutter + Supabase + AI}
+\begin{itemize}
+  \item \href{https://play.google.com/store/apps/details?id=com.mtrs.habit_ai}{Live on Google Play}. AI-driven nudges that adapt to user behavior, streak tracking, completion analytics, offline-first sync, freemium subscription, and GDPR-compliant encrypted data handling.
+\end{itemize}
+
+\project{Decode --- AI-Powered Situational Clarity App}{Flutter + Supabase + AI}
+\begin{itemize}
+  \item \href{https://play.google.com/store/apps/details?id=com.mtrs.decode}{Live on Google Play}. AI-generated structured breakdowns using cautious, non-diagnostic language; anonymous-by-default auth with optional email sync, offline history, and a freemium subscription model.
+\end{itemize}
+
+\smallgap
+\textit{Professional / Client --- shipped to production stores:}
+\smallgap
+
+\project{WanderNest --- Tour \& Travel Booking Platform}{Flutter + Node.js + MySQL}
+\begin{itemize}
+  \item On the \href{https://apps.apple.com/us/app/wandernest/id6785061278}{App Store} \& \href{https://play.google.com/store/apps/details?id=com.binaryans.wandernest}{Google Play}. Built the cross-platform Flutter traveler app end-to-end --- phone-OTP authentication, tour package search and booking flows, custom tour requests, a Gemini-powered AI trip planner, payments (Stripe/bKash/Nagad), and realtime Socket.IO notifications --- backed by a Node.js + Prisma + MySQL API with a React admin panel.
+\end{itemize}
+
+\project{UniDash --- Multi-Vendor Restaurant Ordering Platform}{Flutter}
+\begin{itemize}
+  \item \href{https://play.google.com/store/apps/details?id=com.unidash360byOSL.unidash_app}{Live on Google Play}. Solely built the rider delivery Flutter app and real-time order display system; collaborated on the KIOSK self-ordering app (live at Station by Chef's Table) and the customer Flutter app.
+\end{itemize}
+
+\project{eJOTNO --- Healthcare Platform}{Flutter}
+\begin{itemize}
+  \item \href{https://apps.apple.com/us/app/ejotno/id6741751239}{App Store} \& \href{https://play.google.com/store/apps/details?id=com.osl.ejotno}{Play Store}. Built end-to-end: cross-platform Flutter app connecting users with verified doctors and caregivers, with role-based secure workflows and REST API integration.
+\end{itemize}
+
+\project{ZAB Prottoy --- Securities Trading Platform}{Flutter}
+\begin{itemize}
+  \item Adopted by 10+ BSEC-registered securities firms; real-time market charts, buy/sell order submission, and portfolio tracking in a regulated financial environment.
+\end{itemize}
+
+\project{Amar Mahallah --- Hyperlocal Marketplace}{Flutter}
+\begin{itemize}
+  \item \href{https://apps.apple.com/ng/app/amar-mahallah/id6737305293}{App Store} \& \href{https://play.google.com/store/apps/details?id=com.amar_mahallah.amar_mahallah}{Play Store}. Neighborhood vendor discovery with proximity matching; full cart, auth, and order-management flows over shared REST APIs.
+\end{itemize}
+
+\project{Courtside Bangladesh --- Sports \& Dining Experience Zone (United Group)}{Flutter}
+\begin{itemize}
+  \item \href{https://apps.apple.com/us/app/courtside-bangladesh/id6476599293}{App Store} \& \href{https://play.google.com/store/apps/details?id=com.osl.courtside}{Play Store}. Contributed to the Flutter user booking app and the Flutter Cashier POS app for venue, event, and ticketing flows.
+\end{itemize}
+
+\project{My Gazi --- Sales \& Workforce Management (Gazi Group)}{Flutter}
+\begin{itemize}
+  \item \href{https://apps.apple.com/us/app/gazi-sales/id6502892439}{App Store} \& \href{https://play.google.com/store/apps/details?id=com.osl.gazi_sales_app}{Play Store}. Territory Sales Officer tracking, secondary sales reporting, payroll, leave, and attendance across Gazi Group's sales ecosystem.
+\end{itemize}
+
+\medgap
+
+% ========================
+% Education
+% ========================
+\section*{Education}
+\entry{B.Sc. in Computer Science and Engineering (CSE)}{2024}{Bangladesh Army International University of Science and Technology (BAIUST)}{}
+\textit{Key coursework:} Data Structures \& Algorithms, Database Systems, Software Engineering, OOP
+
+\medgap
+
+% ========================
+% Certifications
+% ========================
+\section*{Certifications}
+\begin{itemize}
+  \item HackerRank --- SQL (Advanced), SQL (Intermediate), SQL (Basic); Python (Basic)
+  \item Coursera --- Foundations of User Experience (UX) Design
+\end{itemize}
+
+\end{document}

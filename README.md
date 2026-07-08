@@ -20,7 +20,3 @@ npm run check      # type-check
 npm run build      # production build -> build/
 npm run preview    # preview the production build
 ```
-
-## Content
-
-All resume/portfolio content lives in [`src/lib/data/resume.ts`](src/lib/data/resume.ts). The LaTeX source of the downloadable resume is in [`resume/resume.tex`](resume/resume.tex) (compile with pdfLaTeX, output goes to `static/TRSCV.pdf`).

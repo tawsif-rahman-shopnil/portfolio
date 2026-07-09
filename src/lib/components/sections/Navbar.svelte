@@ -17,12 +17,8 @@
 
 <header class="fixed inset-x-0 top-0 z-40 flex justify-center px-4 pt-4">
 	<nav
-		class="border-border/60 bg-background/70 flex w-full max-w-3xl items-center justify-between rounded-2xl border px-4 py-2 shadow-lg shadow-black/20 backdrop-blur-xl"
+		class="md:border-border/60 md:bg-background/70 flex w-full max-w-3xl items-center justify-between md:rounded-2xl md:border md:px-4 md:py-2 md:shadow-lg md:shadow-black/20 md:backdrop-blur-xl"
 	>
-		<a href="#top" class="flex items-center" aria-label="Tawsif Rahman Shopnil — home">
-			<img src="/images/logo_main.png" alt="Tawsif Rahman Shopnil" class="h-12 w-auto md:h-13" />
-		</a>
-
 		<ul class="hidden items-center gap-1 md:flex">
 			{#each links as link (link.href)}
 				<li>
@@ -36,7 +32,7 @@
 			{/each}
 		</ul>
 
-		<div class="flex items-center gap-2">
+		<div class="ml-auto flex items-center gap-2">
 			<a
 				href={profile.resumeUrl}
 				download
@@ -46,7 +42,7 @@
 				Resume
 			</a>
 			<button
-				class="hover:bg-accent/60 rounded-lg p-2 transition-colors md:hidden"
+				class="border-border/60 bg-background/70 hover:bg-accent/60 flex size-10 items-center justify-center rounded-lg border shadow-lg shadow-black/20 backdrop-blur-xl transition-colors md:hidden"
 				onclick={() => (open = !open)}
 				aria-label="Toggle menu"
 			>
@@ -71,7 +67,7 @@
 						<a
 							href={link.href}
 							onclick={() => (open = false)}
-							class="text-muted-foreground hover:text-foreground hover:bg-accent/60 block rounded-lg px-3 py-2.5 text-sm transition-colors"
+							class="text-muted-foreground hover:text-foreground hover:bg-accent/60 block rounded-lg px-3 py-2.5 text-right text-sm transition-colors"
 						>
 							{link.label}
 						</a>
@@ -81,7 +77,7 @@
 					<a
 						href={profile.resumeUrl}
 						download
-						class="text-foreground hover:bg-accent/60 flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors"
+						class="text-foreground hover:bg-accent/60 flex items-center justify-end gap-2 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors"
 					>
 						<Download class="size-4" />
 						Download Resume

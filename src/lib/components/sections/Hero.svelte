@@ -2,8 +2,8 @@
 	import { profile } from '$lib/data/resume';
 	import FlickeringGrid from '$lib/components/ui/FlickeringGrid.svelte';
 	import AnimatedShinyText from '$lib/components/ui/AnimatedShinyText.svelte';
-	import AuroraText from '$lib/components/ui/AuroraText.svelte';
 	import WordRotate from '$lib/components/ui/WordRotate.svelte';
+	import LogoWordmark from './LogoWordmark.svelte';
 	import ShimmerButton from '$lib/components/ui/ShimmerButton.svelte';
 	import BlurFade from '$lib/components/ui/BlurFade.svelte';
 	import Github from '@lucide/svelte/icons/github';
@@ -48,11 +48,8 @@
 		</BlurFade>
 
 		<BlurFade delay={0.2}>
-			<h1
-				class="font-display mt-8 text-5xl leading-[1.05] font-bold tracking-tighter text-balance md:text-7xl"
-			>
-				Tawsif Rahman
-				<AuroraText colors={['#00d4ff', '#38bdf8', '#2563eb', '#22d3ee']}>Shopnil</AuroraText>
+			<h1 class="mt-8">
+				<LogoWordmark line1Class="h-10 md:h-14" line2Class="h-13 md:h-[4.25rem]" />
 			</h1>
 		</BlurFade>
 

@@ -161,7 +161,8 @@ export const projects: Project[] = [
 		tagline: 'Securities Trading Platform — First Capital Securities Ltd.',
 		description:
 			'Adopted by 10+ BSEC-registered securities firms; real-time market charts, buy/sell order submission, and portfolio tracking in a regulated financial environment.',
-		tech: ['Flutter']
+		tech: ['Flutter'],
+		playStore: 'https://play.google.com/store/apps/details?id=com.osl.bot'
 	},
 	{
 		name: 'Amar Mahallah',

@@ -25,11 +25,17 @@
 </script>
 
 <section id="top" class="relative flex min-h-svh items-center justify-center overflow-hidden">
-	<!-- Background: flickering grid masked to a soft radial glow -->
+	<!-- Background: flickering binary grid masked to a soft radial glow -->
 	<div
 		class="absolute inset-0 -z-10 mask-[radial-gradient(ellipse_80%_70%_at_50%_40%,#000_30%,transparent_75%)]"
 	>
-		<FlickeringGrid squareSize={4} gridGap={6} color="#0ea5e9" maxOpacity={0.18} flickerChance={0.1} />
+		<FlickeringGrid
+			squareSize={12}
+			gridGap={10}
+			color="#0ea5e9"
+			maxOpacity={0.18}
+			flickerChance={0.1}
+		/>
 	</div>
 	<div
 		class="from-background pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-40 bg-linear-to-t to-transparent"

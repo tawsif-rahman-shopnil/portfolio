@@ -212,7 +212,7 @@ export const projects: Project[] = [
 export const skillCategories = [
 	{
 		title: 'Mobile',
-		skills: ['Flutter', 'Dart', 'Android', 'KIOSK apps', 'Rider/delivery apps', 'Store deployment']
+		skills: ['Flutter', 'Dart', 'Android', 'Store deployment']
 	},
 	{
 		title: 'Frontend',
@@ -220,7 +220,16 @@ export const skillCategories = [
 	},
 	{
 		title: 'State Management',
-		skills: ['Redux', 'Context API', 'React Query', 'Zustand', 'React Hook Form', 'Formik']
+		skills: [
+			'Riverpod',
+			'Bloc',
+			'Redux',
+			'Context API',
+			'React Query',
+			'Zustand',
+			'React Hook Form',
+			'Formik'
+		]
 	},
 	{
 		title: 'Backend & APIs',

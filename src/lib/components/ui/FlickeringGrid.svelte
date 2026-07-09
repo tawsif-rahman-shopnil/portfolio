@@ -58,17 +58,20 @@
 		const rows = Math.floor(height / (squareSize + gridGap));
 
 		const squares = new Float32Array(cols * rows);
+		const bits = new Uint8Array(cols * rows);
 		for (let i = 0; i < squares.length; i++) {
 			squares[i] = Math.random() * maxOpacity;
+			bits[i] = Math.random() < 0.5 ? 0 : 1;
 		}
 
-		return { cols, rows, squares, dpr };
+		return { cols, rows, squares, bits, dpr };
 	};
 
-	const updateSquares = (squares: Float32Array, deltaTime: number) => {
+	const updateSquares = (squares: Float32Array, bits: Uint8Array, deltaTime: number) => {
 		for (let i = 0; i < squares.length; i++) {
 			if (Math.random() < flickerChance * deltaTime) {
 				squares[i] = Math.random() * maxOpacity;
+				bits[i] = Math.random() < 0.5 ? 0 : 1;
 			}
 		}
 	};
@@ -80,21 +83,21 @@
 		cols: number,
 		rows: number,
 		squares: Float32Array,
+		bits: Uint8Array,
 		dpr: number
 	) => {
 		ctx.clearRect(0, 0, width, height);
-		ctx.fillStyle = 'transparent';
-		ctx.fillRect(0, 0, width, height);
+		ctx.font = `${squareSize * dpr}px ui-monospace, 'Cascadia Mono', 'JetBrains Mono', monospace`;
+		ctx.textBaseline = 'top';
 
 		for (let i = 0; i < cols; i++) {
 			for (let j = 0; j < rows; j++) {
-				const opacity = squares[i * rows + j];
-				ctx.fillStyle = `${memoizedColor}${opacity})`;
-				ctx.fillRect(
+				const idx = i * rows + j;
+				ctx.fillStyle = `${memoizedColor}${squares[idx]})`;
+				ctx.fillText(
+					bits[idx] ? '1' : '0',
 					i * (squareSize + gridGap) * dpr,
-					j * (squareSize + gridGap) * dpr,
-					squareSize * dpr,
-					squareSize * dpr
+					j * (squareSize + gridGap) * dpr
 				);
 			}
 		}
@@ -127,7 +130,7 @@
 			const deltaTime = (time - lastTime) / 1000;
 			lastTime = time;
 
-			updateSquares(gridParams.squares, deltaTime);
+			updateSquares(gridParams.squares, gridParams.bits, deltaTime);
 			drawGrid(
 				ctx,
 				canvas.width,
@@ -135,6 +138,7 @@
 				gridParams.cols,
 				gridParams.rows,
 				gridParams.squares,
+				gridParams.bits,
 				gridParams.dpr
 			);
 			animationFrameId = requestAnimationFrame(animate);

@@ -8,6 +8,7 @@
 	import Projects from '$lib/components/sections/Projects.svelte';
 	import Skills from '$lib/components/sections/Skills.svelte';
 	import Education from '$lib/components/sections/Education.svelte';
+	import Certifications from '$lib/components/sections/Certifications.svelte';
 	import Contact from '$lib/components/sections/Contact.svelte';
 	import Footer from '$lib/components/sections/Footer.svelte';
 
@@ -39,6 +40,7 @@
 	<Projects />
 	<Skills />
 	<Education />
+	<Certifications />
 	<Contact />
 </main>
 

@@ -260,12 +260,100 @@ export const education = {
 	coursework: ['Data Structures & Algorithms', 'Database Systems', 'Software Engineering', 'OOP']
 };
 
-export const certifications = [
-	{ name: 'SQL (Advanced)', issuer: 'HackerRank' },
-	{ name: 'SQL (Intermediate)', issuer: 'HackerRank' },
-	{ name: 'SQL (Basic)', issuer: 'HackerRank' },
-	{ name: 'Python (Basic)', issuer: 'HackerRank' },
-	{ name: 'Foundations of User Experience (UX) Design', issuer: 'Coursera' }
+export interface Certification {
+	name: string;
+	issuer: 'HackerRank' | 'Coursera' | 'Udemy';
+	issued: string;
+	summary: string;
+	url: string;
+}
+
+export const certifications: Certification[] = [
+	{
+		name: 'SQL (Advanced)',
+		issuer: 'HackerRank',
+		issued: '3 Apr 2023',
+		summary: 'Query optimization, data modeling, indexing, window functions, and pivots in SQL.',
+		url: 'https://www.hackerrank.com/certificates/7f57fc237793'
+	},
+	{
+		name: 'SQL (Intermediate)',
+		issuer: 'HackerRank',
+		issued: '2 Apr 2023',
+		summary: 'Complex joins, unions, and sub-queries.',
+		url: 'https://www.hackerrank.com/certificates/4f46fe164539'
+	},
+	{
+		name: 'SQL (Basic)',
+		issuer: 'HackerRank',
+		issued: '23 Mar 2023',
+		summary: 'Simple queries, relationships, and aggregators.',
+		url: 'https://www.hackerrank.com/certificates/3fa42c1fd7c2'
+	},
+	{
+		name: 'Python (Basic)',
+		issuer: 'HackerRank',
+		issued: '2 Apr 2023',
+		summary:
+			'Scalar types, operators and control flow, strings, collections and iteration, modularity, objects, and classes.',
+		url: 'https://www.hackerrank.com/certificates/3f5082538be2'
+	},
+	{
+		name: 'Foundations of User Experience (UX) Design',
+		issuer: 'Coursera',
+		issued: '3 Jun 2022',
+		summary:
+			'First course of the Google UX Design Certificate — empathizing with users, wireframes, prototypes, and usability testing.',
+		url: 'https://coursera.org/share/676916cbc0e44c6eb63f4a1fd99daacb'
+	},
+	{
+		name: 'Build a Full Website using WordPress',
+		issuer: 'Coursera',
+		issued: '9 Apr 2022',
+		summary:
+			'Guided project building a complete, user-friendly website with WordPress themes and plugins.',
+		url: 'https://coursera.org/share/f6e0ff5b5a678b399716b07ef5a5c163'
+	},
+	{
+		name: 'Graphic Design MasterClass — Photoshop, Illustrator, InDesign',
+		issuer: 'Udemy',
+		issued: '29 Nov 2021',
+		summary:
+			'Design theory — color, composition, layout, and grid systems — plus Photoshop, Illustrator, and InDesign workflows.',
+		url: 'https://www.udemy.com/certificate/UC-e1c4d819-07ac-45d8-b270-ceeef9969cde'
+	},
+	{
+		name: 'Programming for Everybody (Getting Started with Python)',
+		issuer: 'Coursera',
+		issued: '20 May 2021',
+		summary:
+			'University of Michigan course covering Python 3 programming fundamentals from “Python for Everybody”.',
+		url: 'https://coursera.org/share/f2b846104f9cbfea3b59a390e94d4cf8'
+	},
+	{
+		name: 'JavaScript, Bootstrap & PHP — Certification for Beginners',
+		issuer: 'Udemy',
+		issued: '27 Mar 2021',
+		summary:
+			'Front-end and back-end fundamentals: DOM manipulation with JavaScript, Bootstrap layouts, and PHP.',
+		url: 'https://www.udemy.com/certificate/UC-ac6d8490-e6e6-4a3d-9d4f-34b33a30e29e'
+	},
+	{
+		name: 'Master Git and GitHub — Beginner to Expert',
+		issuer: 'Udemy',
+		issued: '15 Apr 2023',
+		summary:
+			'Repositories, branching, merge techniques, conflict resolution, forking, and collaboration workflows.',
+		url: 'https://www.udemy.com/certificate/UC-dea0ddcb-1f16-46e9-b558-f8d54748c21e'
+	},
+	{
+		name: 'Introduction to Bash Shell Scripting',
+		issuer: 'Coursera',
+		issued: '15 Apr 2023',
+		summary:
+			'Bash fundamentals — everyday shell commands and a scripted directory backup and email project.',
+		url: 'https://coursera.org/share/0319a0f873b93ef88408d27da63a7b96'
+	}
 ];
 
 export const leadership = [

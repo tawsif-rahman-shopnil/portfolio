@@ -104,7 +104,7 @@
 
 		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 			{#each skillCategories as category, i (category.title)}
-				<BlurFade delay={0.1 + (i % 4) * 0.07}>
+				<BlurFade class="h-full" delay={0.1 + (i % 4) * 0.07}>
 					<div
 						class="border-border/60 bg-card/50 hover:border-cyan-500/40 h-full rounded-2xl border p-5 transition-colors"
 					>

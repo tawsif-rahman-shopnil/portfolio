@@ -17,7 +17,7 @@
 
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 		{#each independentApps as app, i (app.name)}
-			<BlurFade delay={0.15 + i * 0.1}>
+			<BlurFade class="h-full" delay={0.15 + i * 0.1}>
 				<div
 					class="border-border/60 bg-card/50 relative h-full overflow-hidden rounded-2xl border p-7 md:p-8"
 				>
@@ -83,7 +83,7 @@
 
 		<div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 			{#each projects as project, i (project.name)}
-				<BlurFade delay={0.1 + (i % 3) * 0.08}>
+				<BlurFade class="h-full" delay={0.1 + (i % 3) * 0.08}>
 					<MagicCard
 						class="h-full rounded-2xl border border-border/60"
 						gradientColor="#0c1e2e"

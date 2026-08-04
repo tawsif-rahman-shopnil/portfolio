@@ -90,7 +90,7 @@
 		class="pointer-events-none absolute inset-px rounded-[inherit] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 		style={{ background: overlayGradient, opacity: gradientOpacity }}
 	/>
-	<div class="relative">
+	<div class="relative h-full">
 		{#if children}
 			{@render children()}
 		{/if}

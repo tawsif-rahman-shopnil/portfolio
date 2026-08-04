@@ -48,7 +48,7 @@
 
 		<div class="grid grid-cols-2 gap-4">
 			{#each stats as stat, i (stat.label)}
-				<BlurFade delay={0.15 + i * 0.1}>
+				<BlurFade class="h-full" delay={0.15 + i * 0.1}>
 					<div
 						class="border-border/60 bg-card/50 hover:border-border h-full rounded-2xl border p-6 transition-colors"
 					>

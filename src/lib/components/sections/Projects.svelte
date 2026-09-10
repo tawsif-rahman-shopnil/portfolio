@@ -19,7 +19,7 @@
 		{#each independentApps as app, i (app.name)}
 			<BlurFade class="h-full" delay={0.15 + i * 0.1}>
 				<div
-					class="border-border/60 bg-card/50 relative h-full overflow-hidden rounded-2xl border p-7 md:p-8"
+					class="border-border/60 bg-card/50 relative flex h-full flex-col overflow-hidden rounded-2xl border p-7 md:p-8"
 				>
 					<BorderBeam size={80} duration={7} delay={i * 3.5} colorFrom="#00e5ff" colorTo="#2563eb" />
 
@@ -31,7 +31,9 @@
 					<h3 class="font-display mt-4 text-2xl font-bold md:text-3xl">{app.name}</h3>
 					<p class="text-muted-foreground mt-1 text-sm font-medium">{app.tagline}</p>
 
-					<p class="text-muted-foreground mt-4 text-sm leading-relaxed text-pretty md:text-[15px]">
+					<p
+						class="text-muted-foreground mt-4 flex-1 text-sm leading-relaxed text-pretty md:text-[15px]"
+					>
 						{app.description}
 					</p>
 

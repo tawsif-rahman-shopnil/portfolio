@@ -110,10 +110,10 @@ export const independentApps: Project[] = [
 		badge: 'Independent · Live on both stores'
 	},
 	{
-		name: 'Serein',
-		tagline: 'AI Habit Tracker',
+		name: 'HabitZap',
+		tagline: 'Daily Habit Tracker',
 		description:
-			'Independently built and published a calm, AI-powered habit tracking app. AI-driven nudges adapting to user behavior, streak tracking, completion analytics, offline-first sync, freemium subscription, and GDPR-compliant encrypted data handling.',
+			'Independently built and published a habit tracking app with flexible custom schedules and goals, streak tracking, progress insights and achievements, personalized AI coaching nudges, and habit reminders.',
 		tech: ['Flutter', 'Supabase', 'AI'],
 		playStore: 'https://play.google.com/store/apps/details?id=com.mtrs.habit_ai',
 		featured: true,

@@ -5,7 +5,6 @@
 	import BorderBeam from '$lib/components/ui/BorderBeam.svelte';
 	import MagicCard from '$lib/components/ui/MagicCard.svelte';
 	import Github from '@lucide/svelte/icons/github';
-	import Globe from '@lucide/svelte/icons/globe';
 	import Sparkles from '@lucide/svelte/icons/sparkles';
 </script>
 
@@ -113,16 +112,16 @@
 							</div>
 
 							{#if project.website || project.appStore || project.playStore}
-								<div class="border-border/60 mt-4 flex flex-wrap items-center gap-2.5 border-t pt-3.5">
+								<div class="border-border/60 mt-4 flex flex-nowrap items-center gap-2.5 border-t pt-3.5">
 									{#if project.website}
 										<a
 											href={project.website}
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label="Visit the {project.name} website"
-											class="border-border/60 inline-flex h-8 items-center gap-1.5 rounded-md border px-2.5 text-xs font-medium text-cyan-300 transition-all hover:-translate-y-0.5 hover:opacity-90"
+											class="min-w-0 max-w-[6.8rem] flex-1 transition-all hover:-translate-y-0.5 hover:opacity-90"
 										>
-											<Globe class="size-3.5" /> Website
+											<img src="/images/website.svg" alt="Visit website" class="h-auto w-full" />
 										</a>
 									{/if}
 									{#if project.appStore}
@@ -131,9 +130,9 @@
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label="Download {project.name} on the App Store"
-											class="transition-all hover:-translate-y-0.5 hover:opacity-90"
+											class="min-w-0 max-w-[6.8rem] flex-1 transition-all hover:-translate-y-0.5 hover:opacity-90"
 										>
-											<img src="/images/app-store.svg" alt="Download on the App Store" class="h-8 w-auto" />
+											<img src="/images/app-store.svg" alt="Download on the App Store" class="h-auto w-full" />
 										</a>
 									{/if}
 									{#if project.playStore}
@@ -142,9 +141,9 @@
 											target="_blank"
 											rel="noopener noreferrer"
 											aria-label="Get {project.name} on Google Play"
-											class="transition-all hover:-translate-y-0.5 hover:opacity-90"
+											class="min-w-0 max-w-[6.8rem] flex-1 transition-all hover:-translate-y-0.5 hover:opacity-90"
 										>
-											<img src="/images/google-play.svg" alt="Get it on Google Play" class="h-8 w-auto" />
+											<img src="/images/google-play.svg" alt="Get it on Google Play" class="h-auto w-full" />
 										</a>
 									{/if}
 								</div>

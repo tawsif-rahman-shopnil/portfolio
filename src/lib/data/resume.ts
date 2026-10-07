@@ -47,7 +47,7 @@ export const experience: ExperienceItem[] = [
 		period: 'Mar 2024 — Present',
 		type: 'On-site · Full-time',
 		highlights: [
-			'Contributed to UniDash, a multi-vendor restaurant ordering platform — solely built the rider delivery Flutter app, the real-time order display system for TV/kitchen screens, the React web admin panel, and the Node.js item-sync microservice.',
+			'Contributed to UniDash, a multi-vendor restaurant ordering platform — developed the UniDash 360 website and solely built the rider delivery Flutter app, the real-time order display system for TV/kitchen screens, the React web admin panel, and the Node.js item-sync microservice.',
 			'Collaborated on the KIOSK self-ordering Flutter app (live at Station by Chef’s Table), the customer Flutter app, and the Laravel REST backend.',
 			'Delivered Amar Mahallah — a hyperlocal marketplace connecting neighborhood vendors with local customers via proximity matching.',
 			'Built My Gazi for Gazi Group: Territory Sales Officer tracking, secondary sales reporting, payroll, leave, and attendance modules.',
@@ -92,6 +92,7 @@ export interface Project {
 	tech: string[];
 	appStore?: string;
 	playStore?: string;
+	website?: string;
 	github?: string;
 	featured?: boolean;
 	badge?: string;
@@ -145,8 +146,10 @@ export const projects: Project[] = [
 		name: 'UniDash',
 		tagline: 'Multi-Vendor Restaurant Ordering Platform',
 		description:
-			'Solely built the rider delivery app, real-time order display for TV/kitchen screens, React admin panel, and Node.js menu-sync microservice. Collaborated on the KIOSK app, customer app, and Laravel backend.',
+			'Developed the UniDash 360 website and solely built the rider delivery app, real-time order display for TV/kitchen screens, React admin panel, and Node.js menu-sync microservice. Collaborated on the KIOSK app, customer app, and Laravel backend. The customer app is live on the App Store and Google Play.',
 		tech: ['Flutter', 'React', 'Laravel', 'Node.js'],
+		website: 'https://unidash360.com/',
+		appStore: 'https://apps.apple.com/us/app/unidash-360/id6806720093',
 		playStore: 'https://play.google.com/store/apps/details?id=com.unidash360byOSL.unidash_app'
 	},
 	{

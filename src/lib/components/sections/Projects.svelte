@@ -5,6 +5,7 @@
 	import BorderBeam from '$lib/components/ui/BorderBeam.svelte';
 	import MagicCard from '$lib/components/ui/MagicCard.svelte';
 	import Github from '@lucide/svelte/icons/github';
+	import Globe from '@lucide/svelte/icons/globe';
 	import Sparkles from '@lucide/svelte/icons/sparkles';
 </script>
 
@@ -111,8 +112,19 @@
 								{/each}
 							</div>
 
-							{#if project.appStore || project.playStore}
-								<div class="border-border/60 mt-4 flex items-center gap-2.5 border-t pt-3.5">
+							{#if project.website || project.appStore || project.playStore}
+								<div class="border-border/60 mt-4 flex flex-wrap items-center gap-2.5 border-t pt-3.5">
+									{#if project.website}
+										<a
+											href={project.website}
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="Visit the {project.name} website"
+											class="border-border/60 inline-flex h-8 items-center gap-1.5 rounded-md border px-2.5 text-xs font-medium text-cyan-300 transition-all hover:-translate-y-0.5 hover:opacity-90"
+										>
+											<Globe class="size-3.5" /> Website
+										</a>
+									{/if}
 									{#if project.appStore}
 										<a
 											href={project.appStore}

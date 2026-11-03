@@ -12,7 +12,7 @@ export const profile = {
 	email: 'tawsif.rahman.shopnil@gmail.com',
 	website: 'https://tawsifrahmanshopnil.com',
 	summary:
-		'Full-stack software engineer with 2+ years of professional experience delivering mobile apps, web applications, and backend systems across Flutter, React, Laravel, and Node.js. Independently shipped three AI-powered apps live on the App Store and Google Play. Comfortable across the full product lifecycle — from architecture and API design to deployment and post-release support.',
+		'Full-stack software engineer with 2+ years of professional experience delivering mobile apps, web applications, and backend systems across Flutter, React, Laravel, and Node.js. Independently shipped three apps live on the App Store and Google Play. Comfortable across the full product lifecycle — from architecture and API design to deployment and post-release support.',
 	resumeUrl: '/TRSCV.pdf',
 	socials: {
 		github: 'https://github.com/tawsif-rahman-shopnil',
@@ -111,11 +111,11 @@ export const independentApps: Project[] = [
 		badge: 'Independent · Live on both stores'
 	},
 	{
-		name: 'HabitZap',
-		tagline: 'Daily Habit Tracker',
+		name: 'HabitUp: Habit Tracker',
+		tagline: 'Small habits. A fuller life.',
 		description:
-			'Independently built and published a habit tracking app with flexible custom schedules and goals, streak tracking, progress insights and achievements, personalized AI coaching nudges, and habit reminders.',
-		tech: ['Flutter', 'Supabase', 'AI'],
+			'Independently built and published a habit tracker with flexible daily planning, focus timers, and a Rescue Ladder for smaller steps or planned rest days. Tracks consistency, streaks, and full versus starter efforts across 7, 30, and 90 days, with customizable alarms, quiet hours, and accountability mates with selective activity sharing.',
+		tech: ['Flutter', 'Supabase'],
 		playStore: 'https://play.google.com/store/apps/details?id=com.mtrs.habit_ai',
 		featured: true,
 		badge: 'Independent · Live on Google Play'
@@ -134,10 +134,10 @@ export const independentApps: Project[] = [
 
 export const projects: Project[] = [
 	{
-		name: 'WanderNest',
-		tagline: 'Tour Booking Platform',
+		name: 'TourifyX',
+		tagline: 'Travel Marketplace & Tour Booking',
 		description:
-			'Complete tour booking system built end-to-end: Flutter traveler app with phone-OTP login and a Gemini-powered AI trip planner, React admin panel, and Node.js + Prisma API — packages, bookings, custom tour requests, payments (Stripe/bKash/Nagad), and realtime notifications.',
+			'Built end-to-end with a Flutter traveler app, React admin panel, and Node.js + Prisma API. Connects travelers with curated local and international tours and verified agencies, with destination, budget, duration, and mood filters, detailed itineraries and reviews, local wishlists, phone OTP sign-in, booking management, custom tour requests, and travel notifications.',
 		tech: ['Flutter', 'React', 'Node.js', 'Prisma', 'MySQL'],
 		appStore: 'https://apps.apple.com/us/app/wandernest/id6785061278',
 		playStore: 'https://play.google.com/store/apps/details?id=com.binaryans.wandernest'

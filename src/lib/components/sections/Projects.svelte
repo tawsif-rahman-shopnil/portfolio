@@ -12,7 +12,7 @@
 	<SectionHeading
 		eyebrow="Independent Apps"
 		title="Built, shipped & maintained solo"
-		subtitle="AI-powered products I designed, developed, and published on my own — live on the stores right now."
+		subtitle="Apps I designed, developed, and published on my own — live on the stores right now."
 	/>
 
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
